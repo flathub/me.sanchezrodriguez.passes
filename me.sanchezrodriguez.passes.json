@@ -31,8 +31,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "tag" : "v0.2",
-                    "commit" : "cb63c70d2c7594ac27872f30576aef6aa3ef6d71",
+                    "tag" : "v0.2.1",
+                    "commit" : "11e4771e8188f372fdb0b1fc56a839ef1635c5f2",
                     "url" : "https://github.com/pablo-s/passes.git"
                 }
             ]
