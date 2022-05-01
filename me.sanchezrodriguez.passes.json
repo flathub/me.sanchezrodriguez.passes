@@ -23,7 +23,7 @@
         "*.a"
     ],
     "modules" : [
-        "modules/python3-qrcode.json",
+        "modules/zint.json",
         {
             "name" : "passes",
             "builddir" : true,
@@ -31,8 +31,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "tag" : "v0.3",
-                    "commit" : "85166e3de4578c730730c884990968c3f151ebc7",
+                    "tag" : "v0.4",
+                    "commit" : "ef322de2095d5f2e24c0a7a4f7f194bc7ea62bd9",
                     "url" : "https://github.com/pablo-s/passes.git"
                 }
             ]
