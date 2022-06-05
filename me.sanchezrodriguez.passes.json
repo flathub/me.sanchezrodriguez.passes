@@ -22,7 +22,11 @@
         "*.la",
         "*.a"
     ],
+    "cleanup-commands" : [
+        "find /app -type d -name blueprintcompiler | xargs rm -fr"
+    ],
     "modules" : [
+        "modules/blueprint.json",
         "modules/zint.json",
         {
             "name" : "passes",
@@ -31,8 +35,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "tag" : "blueprint",
-                    "commit" : "56f686e3504a0b4a7e87cd5a797bbbaad6aac662",
+                    "tag" : "v0.6",
+                    "commit" : "305ca9560de54d9d7275382334a73ca3a2c61d2b",
                     "url" : "https://github.com/pablo-s/passes.git"
                 }
             ]
