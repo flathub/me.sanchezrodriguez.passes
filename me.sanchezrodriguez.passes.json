@@ -1,7 +1,7 @@
 {
     "app-id" : "me.sanchezrodriguez.passes",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "passes",
     "finish-args" : [
@@ -35,8 +35,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "tag" : "v0.6",
-                    "commit" : "305ca9560de54d9d7275382334a73ca3a2c61d2b",
+                    "tag" : "v0.7",
+                    "commit" : "89dcade9676df519b439669b7f1205debafffbd6",
                     "url" : "https://github.com/pablo-s/passes.git"
                 }
             ]
