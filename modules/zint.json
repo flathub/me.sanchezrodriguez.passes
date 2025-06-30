@@ -1,19 +1,19 @@
 {
-    "name": "zint",
-    "buildsystem": "cmake",
-    "sources": [
-        {
-            "type": "git",
-            "url": "https://github.com/zint/zint.git",
-            "tag" : "2.15.0",
-            "commit" : "4896136bdbebb1a0908a5cc419513efa5bf4bf70",
-            "x-checker-data": {
-              "type": "git",
-              "tag-pattern": "^([\\d.]+)$"
-            }
-        }
-    ],
-    "cleanup": [
-        "/bin/zint"
-    ]
+  "name": "zint",
+  "buildsystem": "cmake",
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/zint/zint.git",
+      "tag": "2.15.0",
+      "commit": "4896136bdbebb1a0908a5cc419513efa5bf4bf70",
+      "x-checker-data": {
+        "type": "git",
+        "tag-pattern": "^([\\d.]+)$"
+      }
+    }
+  ],
+  "cleanup": [
+    "/bin/zint"
+  ]
 }

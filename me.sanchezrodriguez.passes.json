@@ -1,49 +1,49 @@
 {
-    "app-id" : "me.sanchezrodriguez.passes",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "passes",
-    "finish-args" : [
-        "--share=network",
-        "--share=ipc",
-        "--socket=fallback-x11",
-        "--device=dri",
-        "--socket=wayland"
-    ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
-    "cleanup-commands" : [
-        "find /app -type d -name blueprintcompiler | xargs rm -fr"
-    ],
-    "modules" : [
-        "modules/blueprint.json",
-        "modules/zint.json",
+  "app-id": "me.sanchezrodriguez.passes",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "48",
+  "sdk": "org.gnome.Sdk",
+  "command": "passes",
+  "finish-args": [
+    "--share=network",
+    "--share=ipc",
+    "--socket=fallback-x11",
+    "--device=dri",
+    "--socket=wayland"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/man",
+    "/share/doc",
+    "/share/gtk-doc",
+    "/share/man",
+    "/share/pkgconfig",
+    "*.la",
+    "*.a"
+  ],
+  "cleanup-commands": [
+    "find /app -type d -name blueprintcompiler | xargs rm -fr"
+  ],
+  "modules": [
+    "modules/blueprint.json",
+    "modules/zint.json",
+    {
+      "name": "passes",
+      "builddir": true,
+      "buildsystem": "meson",
+      "sources": [
         {
-            "name" : "passes",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/pablo-s/passes.git",
-                    "tag" : "v0.10",
-                    "commit" : "cbd32c0d2d5e8d5e4e385187bb08bd3581ebb3c9",
-                    "x-checker-data": {
-                      "type": "git",
-                      "tag-pattern": "^v([\\d.]+)$"
-                    }
-                }
-            ]
+          "type": "git",
+          "url": "https://github.com/pablo-s/passes.git",
+          "tag": "v0.10",
+          "commit": "cbd32c0d2d5e8d5e4e385187bb08bd3581ebb3c9",
+          "x-checker-data": {
+            "type": "git",
+            "tag-pattern": "^v([\\d.]+)$"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
