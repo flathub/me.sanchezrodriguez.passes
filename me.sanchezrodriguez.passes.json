@@ -38,6 +38,10 @@
                     "url" : "https://github.com/pablo-s/passes.git",
                     "tag" : "v0.10",
                     "commit" : "cbd32c0d2d5e8d5e4e385187bb08bd3581ebb3c9",
+                    "x-checker-data": {
+                      "type": "git",
+                      "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         }
