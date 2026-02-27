@@ -1,7 +1,7 @@
 {
   "app-id": "me.sanchezrodriguez.passes",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "48",
+  "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
   "command": "passes",
   "finish-args": [
@@ -13,21 +13,14 @@
   ],
   "cleanup": [
     "/include",
-    "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "*.la",
-    "*.a"
+    "/lib/cmake",
+    "/share/man"
   ],
   "cleanup-commands": [
-    "find /app -type d -name blueprintcompiler | xargs rm -fr"
+    "python3 -m compileall --invalidation-mode=unchecked-hash /app"
   ],
   "modules": [
-    "modules/blueprint.json",
-    "modules/zint.json",
+    "zint.json",
     {
       "name": "passes",
       "builddir": true,
