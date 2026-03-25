@@ -1,8 +1,11 @@
 app-id: me.sanchezrodriguez.passes
 command: passes
 
+# * https://docs.flatpak.org/en/latest/available-runtimes.html#gnome
+# * https://release.gnome.org/calendar/#releases
+# * https://flathub.org/en/apps/org.gnome.Platform
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 
 finish-args:
