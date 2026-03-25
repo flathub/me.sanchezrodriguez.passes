@@ -1,0 +1,12 @@
+name: zint
+buildsystem: cmake
+sources:
+  - type: git
+    url: https://github.com/zint/zint.git
+    tag: 2.16.0
+    commit: 55541e139e62b9209b71cd9b0ba9010cec28b1d9
+    x-checker-data:
+      type: git
+      tag-pattern: ^([\d.]+)$
+cleanup:
+  - /bin/zint
