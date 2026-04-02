@@ -42,8 +42,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/pablo-s/passes.git
-        tag: v0.10
-        commit: cbd32c0d2d5e8d5e4e385187bb08bd3581ebb3c9
+        tag: v0.11
+        commit: 6bd1a8aed7a53a6f1c66e4ad0d9391edbe5b3b5f
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
